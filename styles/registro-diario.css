@@ -1,0 +1,16 @@
+.galpoes-selector .btn-menu {
+    min-width: 120px;
+}
+
+.galpoes-selector .btn-menu.active {
+    background-color: var(--primary-brown);
+    color: var(--secondary-beige);
+}
+
+#registroForm .form-check {
+    margin-bottom: 10px;
+}
+
+#racaoInputs .form-group {
+    margin-bottom: 10px;
+}

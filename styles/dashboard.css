@@ -1,0 +1,71 @@
+:root {
+    --primary-brown: #5D4037;
+    --secondary-beige: #D7CCC8;
+    --light-beige: #EFEBE9;
+}
+
+body {
+    background-color: var(--light-beige);
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-brown) !important;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.menu-principal .btn-menu {
+    background-color: var(--secondary-beige);
+    color: var(--primary-brown);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.menu-principal .btn-menu:hover {
+    background-color: var(--primary-brown);
+    color: var(--secondary-beige);
+}
+
+.stat-card {
+    background-color: var(--secondary-beige);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-brown);
+}
+
+.stat-label {
+    color: rgba(0,0,0,0.6);
+}
+
+.estoque-resumo .card {
+    background-color: var(--secondary-beige);
+}
+
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+    }
+
+    .btn-menu {
+        margin-bottom: 10px;
+    }
+}

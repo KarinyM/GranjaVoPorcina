@@ -1,0 +1,120 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Vó Porcina - Gestão de Granja</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid dashboard">
+        <header class="row bg-primary text-white py-3">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <img src="logo.png" alt="Logo Vó Porcina" class="logo">
+                <div class="user-info">
+                    <span>Administrador</span>
+                    <i class="bi bi-person-circle ms-2"></i>
+                </div>
+            </div>
+        </header>
+
+        <nav class="row menu-principal">
+            <div class="col-12">
+                <div class="nav-buttons d-flex justify-content-around my-3">
+                    <button class="btn btn-menu active" onclick="location.href='index.html'">
+                        <i class="bi bi-speedometer2"></i> Dashboard
+                    </button>
+                    <button class="btn btn-menu" onclick="location.href='registro-diario.html'">
+                        <i class="bi bi-calendar-check"></i> Registro Diário
+                    </button>
+                    <button class="btn btn-menu" onclick="location.href='funcionarios.html'">
+                        <i class="bi bi-people"></i> Funcionários
+                    </button>
+                    <button class="btn btn-menu" onclick="location.href='estoque.html'">
+                        <i class="bi bi-box-seam"></i> Estoque
+                    </button>
+                    <button class="btn btn-menu" onclick="location.href='relatorios.html'">
+                        <i class="bi bi-file-earmark-text"></i> Relatórios
+                    </button>
+                    <button class="btn btn-menu" onclick="location.href='financeiro.html'">
+                        <i class="bi bi-currency-dollar"></i> Financeiro
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="row dashboard-stats">
+            <div class="col-md-4 mb-3">
+                <div class="card stat-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ovos</h5>
+                        <div class="stat-content">
+                            <span class="stat-number" id="ovosColhidosHoje">0</span>
+                            <span class="stat-label">Colhidos Hoje</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card stat-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Galinhas</h5>
+                        <div class="stat-content">
+                            <span class="stat-number" id="galinhasMortasHoje">0</span>
+                            <span class="stat-label">Mortas Hoje</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card stat-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração</h5>
+                        <div class="stat-content">
+                            <span class="stat-number" id="racaoConsumidaHoje">0 kg</span>
+                            <span class="stat-label">Consumida Hoje</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="row estoque-resumo mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        Status de Estoque
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>Ovos:</strong> <span id="totalOvosEstoque">0</span> unidades
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Ração Crescimento:</strong> <span id="racaoCrescimentoEstoque">0</span> kg
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Ração Pico:</strong> <span id="racaoPicoEstoque">0</span> kg
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <strong>Ração P1:</strong> <span id="racaoP1Estoque">0</span> kg
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Ração P2:</strong> <span id="racaoP2Estoque">0</span> kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
